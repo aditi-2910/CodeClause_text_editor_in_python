@@ -172,9 +172,11 @@ def ShowToolBarFunc():
         toolBar.pack_forget()
     if showToolBar.get()==True:
         TextArea.pack_forget()
+        StatusBar.pack_forget()
         toolBar.pack(fill=X)
         TextArea.pack(fill=BOTH,expand=1)
-
+        StatusBar.pack()
+        
 #function to show/hide status bar
 def ShowStatusBarFunc():
     if showStatusBar.get()==False:
